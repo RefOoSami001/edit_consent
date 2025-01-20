@@ -270,7 +270,7 @@ def index():
             generate_image_1(BASE_IMAGE_PATH_1, text_elements_1, output_path_1)
 
             # Generate the second image
-            img_buffer_2 = generate_image_2(BASE_IMAGE_PATH_2, stamp_image_path, front_id_path, back_id_path, customer_name, central, date, phone_num)
+            img_buffer_2 = generate_image_2(BASE_IMAGE_PATH_2, stamp_image_path, front_id_path, back_id_path, customer_name, central, date, landline)
             output_path_2 = os.path.join(app.config['UPLOAD_FOLDER'], 'output_2.jpg')
             with open(output_path_2, 'wb') as f:
                 f.write(img_buffer_2.getvalue())
