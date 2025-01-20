@@ -9,7 +9,7 @@ body {
 
 /* Container for the form */
 .container {
-    max-width: 1000px; /* Adjust this value to make the form narrower */
+    max-width: 1200px; /* Adjust this value to make the form narrower */
     margin: 0 auto;
     padding: 20px;
 }
