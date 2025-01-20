@@ -66,7 +66,7 @@
                                 <input type="text" name="sales_name" id="sales_name" class="form-control" required>
                             </div>
                             <div class="mb-3">
-                                <label for="serial" class="form-label">السيريال</label>
+                                <label for="serial" class="form-label">الرقم المسلسل</label>
                                 <input type="text" name="serial" id="serial" class="form-control" required>
                             </div>
                         </div>
@@ -221,6 +221,8 @@
         document.addEventListener('DOMContentLoaded', function() {
             // Default payment frequency
             document.getElementById('serial').value = '0985836';
+            document.getElementById('sales_name').value = 'محمد حمادة جابر';
+            document.getElementById('nationality').value = 'مصري';
             document.getElementById('month').checked = true;
 
             // Default date (today)
