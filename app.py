@@ -67,11 +67,7 @@ def generate_image_2_endpoint():
         if not all([front_id_file, back_id_file, stamp_file]):  # Check that all images are provided
             raise BadRequest("front_id, back_id, and stamp images are required.")
 
-        # Validate file formats (only images)
-        for file in [front_id_file, back_id_file, stamp_file]:
-            if not file.content_type.startswith('image/'):
-                raise UnsupportedMediaType(f"File {file.filename} is not a valid image format.")
-        
+
         # Create BytesIO buffers directly from file content
         front_id_buffer = BytesIO(front_id_file.read())
         back_id_buffer = BytesIO(back_id_file.read())
